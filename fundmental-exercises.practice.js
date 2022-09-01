@@ -1,3 +1,4 @@
+
 // ====  Exercise 1 ==== //
 function computeArea(width, height) {
   const area = width * height
