@@ -114,6 +114,7 @@ const myDog = {
   friends: ['Mele', 'TayTay', 'Chuchu'],
 }
 
+// console.log(myDog.friends[1])
 //* ===============Exercise 2: ===========================
 //* Setup
 const testObj = {
@@ -140,8 +141,8 @@ const testObj2 = {
 // Only change code below this line
 const entreeValue = testObj2["an entree"]
 const drinkValue = testObj2["the drink"]
-
-
+// console.log(entreeValue)
+// console.log(drinkValue)
 
 
 //* ===============Exercise 4: ===========================
@@ -157,7 +158,7 @@ const testObj3 = {
 // Only change code below this line
 const playerNumber = '16'; // Change this line
 const player = testObj3[playerNumber];   // Change this line
-console.log(player);
+ console.log(player);
 
 
 
@@ -174,13 +175,13 @@ const myDog2 = {
 };
 
 // Only change code below this line
-myDog2.name =  'Happy Coder'
+myDog2['name'] = ' Happy Coder'
 console.log(myDog2)
 
 
 
 //* ===============Exercise 6: ===========================
-//Add a bark property to myDo3g and set it to a dog sound, such as "woof". You may use either dot or bracket notation.
+//Add a bark property to myDog3 and set it to a dog sound, such as "woof". You may use either dot or bracket notation.
 
 const myDog3 = {
   "name": "Happy Coder",
@@ -190,7 +191,7 @@ const myDog3 = {
 };
 
 // Only change code below this line
-myDog3["dog sound"] = 'woof' 
+myDog3.bark = 'woof'
 console.log(myDog3);
 
 
@@ -209,7 +210,8 @@ const myDog4 = {
 };
 
 // Only change code below this line
-
+delete myDog4.tails
+console.log(myDog4)
 
 
 
@@ -233,14 +235,28 @@ const myMusic = [
 
 // Only change code below this line
 
+const myMusic2 = {
+    "artist": "Lilly Joel",
+    "title": "Piano Woman",
+    "release_year": 1999,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ]
+}
 
-
+myMusic.push(myMusic2)
+console.log(myMusic)
 
 
 
 
 //* ===============Exercise 9: ===========================
-//   Access the myStorage object and assign the contents of the glove box property to the gloveBoxContents variable. Use dot notation for all properties where possible, otherwise use bracket notation.
+//   Access the myStorage object and assign the contents of the glove 
+//   box property to the gloveBoxContents variable. 
+//   Use dot notation for all properties where possible, 
+//   otherwise use bracket notation.
 
 const myStorage = {
   "car": {
@@ -256,19 +272,16 @@ const myStorage = {
 
 // Only change code below this line
 
-const gloveBoxContents = myStorage.car.inside['glove box']
-
-
-
-
-
-
+const gloveBoxContents = myStorage.car.outside.trunk
+console.log(gloveBoxContents)
 
 
 
 
 //* ===============Exercise 10: FINAL BOSS ===========================
-// Using dot and bracket notation, set the variable secondTree to the second item in the trees list from the myPlants object.
+// Using dot and bracket notation, 
+// set the variable secondTree to the second item 
+// in the trees list from the myPlants object.
 
 
 const myPlants = [
@@ -294,3 +307,5 @@ const myPlants = [
 
 
 // Only change code below this line
+let secondTree = myPlants[1].list[1]
+console.log(secondTree)

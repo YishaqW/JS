@@ -81,7 +81,7 @@ function reverseString(str){
   return reverseStr
 }
 
-console.log( reverseString('qahsiY maharbA tebenesedloW'));
+console.log( reverseString('Yishaq Abraham Woldesenebet'));
 
 
 // ===== capitalize string =====//

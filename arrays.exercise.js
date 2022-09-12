@@ -1,5 +1,5 @@
 // // ==== Exercise 1 ==== //
-// const horror = ['Freddy', 'Jason', 'Michael', 'Ghostface', 'Chucky'];
+// const horror = ['Freddy', 'Jason', 'Michael', 'Ghost-face', 'Chucky'];
 
 // // ADD CODE HERE
 // const fourthItem = horror[3]

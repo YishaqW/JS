@@ -22,7 +22,7 @@ console.log(alphabet) // prints 'abcd'
 
 // ==== PART 2 === //
 
-function map(array, subtractTwo) {
+function recreateForEach (array, subtractTwo) {
   const results = [];
   recreateForEach(array, function (char) {
     results.push(subtractTwo(char));
@@ -40,13 +40,6 @@ const recreateMap = (array, callback ) => {
   return newArray
 }
 
-recreateForEach(letters, function(char) {
-    alphabet += char
-})
-
-// Now let's rebuild recreateMap from the previous challenge. 
-// This time instead of using a for loop, you're going to use the recreateforEach we just created.
-// Uncomment these to check your work!
 console.log(typeof recreateforEach); // should log: 'function'
 recreateForEach(['a','b','c'], i => console.log(i)); // should log: 'a', 'b', 'c'
 console.log(typeof recreateMap); // should log: 'function'
